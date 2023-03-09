@@ -1,0 +1,126 @@
+html,
+body {
+    height: 100%;
+    overflow: scroll;
+
+}
+
+body{
+    background-color: rgb(225, 236, 183);
+    margin:auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    background: linear-gradient(0deg, rgb(225, 236, 183) 50%, rgb(255, 248, 170) 93%);
+    margin-bottom: 40px;
+}
+
+.masthead {
+    display: grid;
+    grid-template-columns: 1f;
+    align-items: start;
+    justify-items: center;
+    margin: 2rem auto auto auto;
+    /* padding: 2rem; */
+}
+
+.logo_div {
+    /* background-image: url("/assets/farm_temp.jpg"); */
+    background-postion: center center;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.signup {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    /* background-color: cornsilk; */
+    background: radial-gradient(circle, rgb(247, 255, 219) 21%, rgb(245, 255, 228) 100%);
+    box-shadow: 0px 10px 20px rgba(185, 188, 83, 0.335);
+    padding: 1rem;
+    padding-bottom: 2rem;
+    width: 600px;
+    max-width: 90%;
+    overflow: auto;
+    border-radius: 1rem;
+    margin: 2rem 1rem 1rem 1rem;
+    line-break: strict;
+    line-height: 1.6rem;
+    border-bottom: 1px  solid #bad469;
+
+
+}
+
+.btn {
+    background: green;
+    /* background-image: -webkit-linear-gradient(top, #d0d400, #7da600);
+    background-image: -moz-linear-gradient(top, #d0d400, #7da600);
+    background-image: -ms-linear-gradient(top, #d0d400, #7da600);
+    background-image: -o-linear-gradient(top, #d0d400, #7da600);
+    background-image: linear-gradient(to bottom, #f1f50e, #9fd401); */
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    border-width: 0;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: max-content;
+  }
+  
+  .btn:hover {
+    background: rgb(22, 167, 22);
+  }
+
+.logo_desktop{
+    display:block;
+    max-width: 70%;
+    margin:auto;
+    min-width: 640px;
+   }
+ 
+.logo_mobile{
+   display:none;
+   width: 80%;
+   max-width: 350px;
+   min-width: 250px ;
+   margin:auto;
+
+}
+
+.badge {
+    max-width: 250px;
+    padding-top: 2rem;
+}
+ 
+@media (max-width: 640px){
+   .logo_desktop{
+    display:none;
+   }
+ 
+   .logo_mobile{
+    display:block;
+   }
+   .signup {
+    width: 350px;
+    max-width: 90%;
+    /* font-size: medium; */
+   }
+   .btn {
+    /* font-size: medium; */
+   }
+   body {
+   }
+ }
